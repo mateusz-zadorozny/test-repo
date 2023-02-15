@@ -44,6 +44,9 @@ wp-config.php
 # htaccess
 /.htaccess
 
+# X-Debug
+local-xdebuginfo.php
+
 # All plugins
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
