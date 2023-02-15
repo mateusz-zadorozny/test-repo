@@ -40,6 +40,7 @@ wp-config.php
 
 # Log files
 *.log
+/wflogs/
 
 # htaccess
 /.htaccess
