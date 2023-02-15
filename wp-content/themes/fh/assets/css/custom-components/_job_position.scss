@@ -1,0 +1,106 @@
+
+.single-job-position{
+    .post-main{
+        padding-top: 64px;
+        .job-description-intro{
+            &, p{
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .page-intro .intro-content{
+        .job-location{
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 150%;
+            margin-bottom: 2rem;
+        }
+    } 
+    
+    .job-salary{
+        font-size: 1rem;
+        font-weight: 300;
+        color: white;
+        &-content{
+            margin-top: 8px;
+            font-size: 16px;
+            strong{
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 130%;
+                margin-right: 4px;
+            }
+            &, p{
+                margin-bottom: 0!important;
+            }
+        }
+        &.box{
+            border: 1px solid #dadada;
+            border-radius: 16px;
+            padding: 16px 24px;
+            margin: 24px 0;
+            color: black;
+        }
+    }
+    
+    .social-share-inline{
+        font-size: 1.125rem;
+        font-weight: 400;
+        display: inline-flex;
+        align-items: center;
+        .social-share-button{
+            background-color: transparent;
+            color: black;
+            font-size: 25px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:first-of-type{
+                margin-left: 6px;
+            }
+            i{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    
+    .sidebar-col{
+        margin-top: 36px;
+        @media screen and (min-width: 992px) {
+            padding-left: 64px;
+            margin-top: 0;
+        }
+    }
+    .sidebar{
+        padding: 2rem;
+        width: 100%;
+        background-color: $lgrey-bg;
+
+        @media screen and (min-width: 768px) {
+            padding: 3rem;
+        }
+        @media screen and (min-width: 992px) {
+            position: sticky;
+            top: 56px;
+        }
+    
+        @media screen and (max-width: 576px) {
+            .ff_submit_btn_wrapper{
+                text-align: center;
+            }
+            margin-left: -24px;
+            margin-right: -24px;
+            width: calc(100% + 48px);
+            padding: 2rem 1.5rem;
+        }
+        
+        .fluentform{
+            padding: 0;
+        }
+    }
+}

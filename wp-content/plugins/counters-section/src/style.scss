@@ -1,0 +1,306 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-counters-section {
+	background-color: #293137;
+	position: relative;
+
+	.counters-section-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
+		
+		&.mask-on{
+			opacity: 0.4;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 50%;
+				background: linear-gradient(180deg, #262626 -5.53%, rgba(38, 38, 38, 0) 84.22%);
+				background-blend-mode: hard-light;
+				z-index: 1;
+			}
+	
+			&:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: radial-gradient(69.61% 207.5% at 25.99% 20.78%, #262626 0%, rgba(38, 38, 38, 0) 100%);
+				background-blend-mode: hard-light;
+				opacity: 0.5;
+				z-index: 1;
+			}
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 4;
+	}
+
+	html .editor-styles-wrapper &, & {
+
+		h1,h2,h3,p {
+			color: white;
+		}
+
+		p.intro {
+			font-size: 1.25rem;
+			margin-bottom: 0;
+		}
+	}
+
+	.counters-section__item-button{
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	.image-columns .counters-section__items-list{
+		.counters-section__items-image-url{
+			display: block;
+			margin-bottom: 1.25rem!important;
+			border-radius: 0;
+		}
+		@media screen and (max-width: 575px) {
+			min-width: 100%;
+			& > div{
+				position: relative;
+				padding-left: 72px;
+			}
+			.counters-section__items-image-url{
+				position: absolute;
+				width: 50px;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.counters-columns{
+		.counters-section__content{
+			color: white!important;
+		}
+		.counters-section__item-value {
+			white-space: nowrap;
+			&.h1{
+				font-weight: 100;
+			}
+		}
+	} 
+	
+	.counters-section__item-label {
+		color: white;
+
+		&.column-content {
+			color: #B7BED0;
+		}
+	}
+
+	.counters-section__content {
+		color: #B7BED0!important;
+		margin-top: 0.5rem;
+	}
+
+	.counters-section__title{
+		@media screen and (min-width: 992px) {
+			padding-right: 48px;
+		}
+	}
+
+	.counters-section__items-list {
+		min-width: 250px;
+
+		@media screen and (min-width: 767px) {
+			
+		}
+		@media screen and (min-width: 768px) {
+			padding-right: 48px;
+		}
+		@media screen and (min-width: 1200px) {
+			padding-right: 80px;
+		}
+
+	}
+
+	.charts-columns .counters-section__items-list{
+		min-width: 320px;
+		@media screen and (max-width: 560px) {
+			min-width: 100%;
+		}
+	}
+
+	.counter-card {
+		@media screen and (max-width: 991px) {
+			display: flex;
+		}
+
+		.counters-section__items-list {
+			.charts-columns &{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				@media screen and (max-width: 991px) {
+					margin: 0 0 2rem;
+				}
+			}
+		}
+
+		.smart-card-img {
+			display: block;
+			width: 100%;
+			max-width: 225px !important;
+			height: auto;
+		}
+	}
+	
+
+	.mobile-visible {
+		display: none;
+
+		@media screen and (max-width: 991px) {
+			display: block;
+		}
+	}
+
+	.mobile-hide {
+		display: block;
+
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	.smart-card-container, .charts-columns .counters-section__items-list {
+		text-align: center;
+	}
+
+	.smart-card {
+		position: relative;
+		display: inline-block;
+		text-align: left;
+		min-height: 300px;
+
+		@media screen and (max-width: 992px) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			min-height: auto;
+		}
+
+		.counters-section__item-label {
+			color: white;
+		}
+
+		&-img {
+			&-mainCircle {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 154px;
+				height: 154px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 50%;
+				text-align: center;
+				text-transform: uppercase;
+
+				@media screen and (max-width: 767px) {
+					width: 118px;
+					height: 118px;
+				}
+
+				img{
+					display: block;
+					margin: auto;
+					max-width: 48px;
+					@media screen and (max-width: 767px) {
+						max-width: 32px;
+					}
+				}
+
+				p {
+					@media screen and (max-width: 767px) {
+						font-size: 0.875rem;
+					}
+					margin: 5px 0 0 !important;
+				}
+
+				.smart-card-img-progress {
+					position: absolute;
+					border: 2px solid var(--accent);
+					width: 154px * 0.52;
+					height: 154px;
+					border-radius: 50%;
+				}
+
+				svg{
+					@media screen and (max-width: 767px) {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+
+		&-text {
+			border-left: 1px solid #fff;
+			padding: 0 0 0 1rem;
+			margin-left: 77px;
+			margin-top: -9px;
+
+			@media screen and (max-width: 992px) {
+				position: relative;
+				top: auto;
+				left: auto;
+				border-left: none;
+				margin-left: 1rem;
+			}
+
+			&-big {
+				padding: 0 !important;
+				margin: 10px 0 0 !important;
+				font-size: 2.875rem !important;
+				font-weight: 100!important;
+			}
+
+			&-small {
+				padding: 0 !important;
+				margin: 0 !important;
+				font-size: 1.25rem !important;
+			}
+		}
+
+		.mkCharts {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			transform: rotate(180deg);
+			z-index: -1;
+		}
+
+	}
+	.section-visible .mkc_circle { animation: mck_progress 1000ms ease-in-out; }
+	
+
+	@keyframes mck_progress {
+		0% {
+			stroke-dasharray: 0, 100;
+		}
+	}
+}

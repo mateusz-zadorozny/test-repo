@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/selected-articles",
+	"version": "0.1.0",
+	"title": "[FH] Blog - Selected Articles",
+	"category": "widgets",
+	"icon": "excerpt-view",
+	"description": "Interactive module with button leading to the blog page. Two interactive segments showing a shortcut of a specific article. Clicking on a segment is leading to an article.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "selected-articles",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+        "attributes": {
+            "title": {
+                "type": "string"
+            },
+            "subtitle": {
+                "type": "string"
+            },
+            "backgroundColor": {
+                "type": "string",
+                "default": "white-bg"
+            },
+            "contentLink": {
+                "type": "string"
+            },
+            "contentLinkText": {
+                "type": "string"
+            },
+            "firstArticle": {
+                "type": "integer"
+            },
+            "firstArticleTitle": {
+                "type": "string"
+            },
+            "firstArticleLink": {
+                "type": "string"
+            },
+            "secondArticle": {
+                "type": "integer"
+            },
+            "secondArticleTitle": {
+                "type": "string"
+            },
+            "secondArticleLink": {
+                "type": "string"
+            }
+        }
+}

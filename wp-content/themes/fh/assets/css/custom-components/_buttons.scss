@@ -1,0 +1,152 @@
+button.components-button.image-button {
+    height: auto;
+    padding: 0;
+}
+
+.edit-post-visual-editor .editor-styles-wrapper, body:not(.wp-admin):not(.wp-customizer), .fluentform{
+    .button{
+        padding: 20px 32px!important;
+        line-height: 1;
+        min-height: 56px;
+        border-radius: 6px;
+        position: relative;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+        &.small{
+            font-size: 0.875rem;
+            height: auto;
+            padding: 12px 16px!important;
+        }
+        &:before{
+                content: '';
+                width: 55px;
+                height: 100%;
+                position: absolute;
+                left: 100%;
+                top: 0;
+                margin-left: -56px;
+                background-size: auto calc(100% + 2px);
+                background-position: right;
+                background-repeat: no-repeat;
+                visibility: hidden;
+                opacity: 1;
+                transition: all 0.3s ease-in-out;
+                z-index: 0;
+        }
+        &:after{
+                font-family: '#{$fh-font-family}' !important;
+                content: $icon-chevron-right;
+                font-size: 16px;
+                position: absolute;
+                padding: 20px;
+                left: 100%; top: 0;
+                margin-left: -48px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+        }
+        @include media-breakpoint-only(xs){
+            &:not(.back){
+                &:after, &:before{
+                    display: none;
+                }
+            }
+        }
+        &:hover{
+            @include media-breakpoint-up(sm){
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            opacity: 0.9;
+            &:before, &:after{
+                margin-left: -36px;
+                visibility: visible;
+                opacity: 1;
+            }
+            &:hover{
+                &:after{
+                    margin-left: -36px;
+                }
+            }
+        }
+        span{
+            position: relative;
+            z-index: 1;
+        }
+        &.primary{
+            color: white;
+            background-color: $orange;
+            box-shadow: 0px 4px 22px rgba(239, 140, 94, 0.32);
+            &:before{
+                background-image: url('../images/fh-shape-orange.svg');
+            }
+            &:hover{
+                background-color: $orange;
+                box-shadow: none;
+            }
+            span::selection{
+                background-color: rgba(black, 0.1);
+                color: white;
+            }
+        }
+        &.secondary{
+            color: white;
+            background-color: $dark-bg;
+            box-shadow: 0px 4px 22px rgba(black, 0.15);
+            &:before{
+                background-image: url('../images/fh-shape-dark.svg');
+            }
+            &:hover{
+                background-color: $dark-bg;
+                box-shadow: none;
+            }
+        }
+        &.white{
+            background-color: white;
+            color: $blue-grey;
+            box-shadow: 0px 4px 22px rgba(black, 0.10);
+            border-radius: 6px;
+            &:before{
+                background-image: url('../images/fh-shape-white.svg');
+            }
+            &:hover{
+                background-color: white;
+                box-shadow: none;
+            }
+        }
+        &.ghost{
+            background-color: transparent;
+            color: white;
+            box-shadow: none;
+            &:hover{
+                text-decoration: underline;
+                box-shadow: none;
+            }
+            &.black{
+                color: black;
+            }
+        }
+        &.back{
+            margin-left: 24px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:before, &:after{
+                left: auto;
+                right: 100%;
+                opacity: 1;
+                visibility: visible;
+                transform: rotate(180deg);
+                margin-right: -32px;
+                margin-left: 0;
+            }
+            &:hover{
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+                margin-left: 8px;
+            }
+        }
+    
+    }
+}

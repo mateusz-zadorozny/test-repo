@@ -1,0 +1,44 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .wp-block-create-block-social-media-section {
+	background: #ECECEC;
+	overflow-x: hidden;
+}
+
+.social-media-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 2rem 0 0;
+	@media screen and (min-width: 992px) {
+		margin: 0;
+	}
+	&__item {
+		width: 48%;
+		position: relative;
+		background: #FFFFFF;
+		border: 1px solid #C4C4C4;
+		border-radius: 12px;
+		padding: 2rem;
+		margin: 0 0 1.5rem 0;
+		text-decoration: none;
+		cursor: pointer;
+
+		h3 {
+			color: #212529!important
+		}
+        
+		&-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				margin-bottom: 0!important;
+			}
+		}
+	}
+}

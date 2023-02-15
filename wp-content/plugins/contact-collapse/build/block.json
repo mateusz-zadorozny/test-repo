@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/contact-collapse",
+  "version": "0.1.0",
+  "title": "[FH] Contact Section",
+  "category": "widgets",
+  "icon": "email-alt",
+  "description": "Interactive module prepared for contact details. Unfolded segment shows the category/kind of the contact person, details are unhidden after click. The box on the right may display the fluentform shortcode.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "contactBlocks": {
+      "type": "array",
+      "default": []
+    },
+    "socialMediaTitle": {
+      "type": "string",
+      "default": "Social Media"
+    },
+    "socialLinks": {
+      "type": "array",
+      "default": []
+    },
+    "columnsVariant": {
+      "type": "string",
+      "default": "4/8"
+    },
+    "formShortCode": {
+      "type": "string"
+    },
+    "sidebarTitle": {
+      "type": "string"
+    },
+    "sidebarBackgroundColor": {
+      "type": "string",
+      "default": "lgrey-bg"
+    }
+  },
+  "textdomain": "contact-collapse",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.icons-columns {
+	&__row {
+		flex-wrap: wrap;
+	}
+	&__card {
+		display: flex;
+		margin-bottom: 2rem;
+		@media screen and (min-width: 1200px) and (max-width: 1420px) {
+			display: block;
+		}
+		&-left {
+			min-width: 64px;
+			&--img {
+				width: 40px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

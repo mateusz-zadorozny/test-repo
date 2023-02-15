@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/social-media-section",
+	"version": "0.1.0",
+	"title": "[FH] Social Media Section",
+	"category": "widgets",
+	"icon": "share",
+	"description": "Interactive section with 4 social media platforms links.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "social-media-section",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"content": {
+			"type": "string"
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "white-bg"
+		},
+		"socialCardsBlock": {
+			"type": "array",
+			"default": []
+		}
+		
+	}
+}

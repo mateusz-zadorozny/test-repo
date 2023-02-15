@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/images-carousel-standalone",
+	"version": "0.1.0",
+	"title": "[FH] Images Carousel",
+	"category": "widgets",
+	"icon": "images-alt2",
+	"description": "Interactive module with clickable arrows to scroll sides with chosen photos.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "images-carousel-standalone",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"content": {
+			"type": "string"
+		},
+		"images": {
+            "type": "array",
+            "default": []
+		}
+	}
+}

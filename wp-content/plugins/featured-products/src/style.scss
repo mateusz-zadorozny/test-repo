@@ -1,0 +1,132 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-featured-products {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	.featured-product {
+		position: relative;
+		padding: 0;
+		border-radius: 6px;
+		background-color: #293137;
+		overflow: hidden;
+		height: 100%;
+		display: block;
+    	text-decoration: none;
+		transition: all 0.3s ease-in-out;
+		@media screen and (min-width: 992px) {
+			height: calc(100% - 3rem);
+		}
+		@media screen and (min-width: 992px) {
+			min-height: 290px;
+		}
+		&__bg-container {
+			position: relative;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: flex;
+			@media screen and (min-width: 992px) {
+				padding-bottom: 0;
+				height: 100%;
+				justify-content: flex-end;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0; top: 0;
+				background-color: #293137;
+				opacity: 0.5;
+				z-index: 1;
+				@media screen and (max-width: 767px){
+					background-color: black;
+					opacity: 0.6;
+				}
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -40%;
+				width: 100%;
+				height: 100%;
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTUiIHZpZXdCb3g9IjAgMCA1NiA1NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ1LjMxMDQgNDkuODE0Mkw0NS40NTIyIDQ5LjY0MTJMNDUuNTE1MyA0OS41NjI2QzQ2LjAxOTQgNDguOTE3OSA0Ni40NzYzIDQ4LjI1NzUgNDYuODM4NyA0Ny41ODE0TDU0LjQxNjcgMzMuNDkyNUM1NC44NDIgMzIuNzA2MyA1NS4xODg2IDMxLjg1NzIgNTUuNDU2NSAzMC45NjA5QzU2LjE4MTIgMjguNTIzNyA1Ni4xODEyIDI1Ljk3NjMgNTUuNDU2NSAyMy41MjM0QzU1LjE4ODYgMjIuNjI3MSA1NC44NDIgMjEuNzc4IDU0LjQxNjcgMjAuOTkxOEw0Ni44Mzg3IDYuOTM0MzZDNDYuNDc2MyA2LjI1ODIyIDQ2LjAxOTQgNS41ODIwOCA0NS41MTUzIDQuOTUzMTJMNDUuNDUyMiA0Ljg3NDQ5TDQ1LjMxMDUgNC43MDE1M0M0Mi43ODk3IDEuNzEzOTMgMzkuMTAzMSAtNy4zODU4N2UtMDcgMzUuMTk2IC05LjA5Mzc0ZS0wN0wxMy4yMTgyIC0xLjg3MDA1ZS0wNkM1LjkyMzc2IC0yLjE4ODllLTA2IDEuMjUzNjRlLTA2IDUuOTEyMjkgOS4zNTQxMWUtMDcgMTMuMTkyNkwtMi45MzUyOGUtMDcgNDEuMzA3NEMtNi4xMTc1OWUtMDcgNDguNTg3NyA1LjkyMzc2IDU0LjUgMTMuMjE4MiA1NC41TDM1LjE5NTkgNTQuNUMzOS4xMDMxIDU0LjUgNDIuNzg5NyA1Mi43ODYxIDQ1LjMxMDQgNDkuNzk4NUw0NS4zMTA0IDQ5LjgxNDJaIiBmaWxsPSIjMjkzMTM3Ii8+Cjwvc3ZnPgo=");
+				background-position: right center;
+				background-size: auto 120%;
+				background-repeat: no-repeat;
+				z-index: 1;
+				transition: left 0.3s ease-in-out;
+				@media screen and (max-width: 991px) {
+					left: 0;
+					top: auto;
+					bottom: 40%;
+					background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI3LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1NiA1NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTYgNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMjkzMTM3O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTUuNCw0NC42bDAuMiwwLjFsMC4xLDAuMWMwLjYsMC41LDEuMywxLDIsMS4zbDE0LjEsNy42YzAuOCwwLjQsMS42LDAuOCwyLjUsMWMyLjQsMC43LDUsMC43LDcuNCwwCgljMC45LTAuMywxLjctMC42LDIuNS0xbDE0LjEtNy42YzAuNy0wLjQsMS40LTAuOCwyLTEuM2wwLjEtMC4xbDAuMi0wLjFjMy0yLjUsNC43LTYuMiw0LjctMTAuMXYtMjJjMC03LjMtNS45LTEzLjItMTMuMi0xMy4yCglsLTI4LjEsMEM2LjctMC44LDAuOCw1LjIsMC44LDEyLjV2MjJDMC44LDM4LjQsMi41LDQyLDUuNCw0NC42TDUuNCw0NC42eiIvPgo8L3N2Zz4K");
+					background-size: 120% auto;
+					background-position: bottom;
+				}
+				@media screen and (max-width: 767px){
+					bottom: 55%;
+				}
+			}
+			.featured-product__photo{
+				position: relative;
+				max-width: 100%;
+				max-height: 90%;
+				z-index: 2;
+				height: auto;
+				width: auto;
+				margin: auto;
+				@media screen and (max-width: 991px) {
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+		&__content {
+			height: 100%;
+			&, h2, p, span{
+				color: white;
+			}
+			p{
+				margin-bottom: 0;
+			}
+			&-col {
+				position: relative;
+				z-index: 4;
+				display: flex;
+				&--item {
+					padding: 40px;
+					@media screen and (min-width: 992px) {
+						padding: 50px;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+		&:hover{
+			@media screen and (min-width: 992px) {
+				.featured-product__bg-container:after{
+					left: -30%;
+				}
+			}
+		}
+	}
+	.second-featured{
+		@media screen and (min-width: 992px) and (max-width: 1200px) {
+			.featured-product__content-col{
+				width: 100%;
+				flex: 0 1 100%;
+			}
+			.featured-product__bg-container{
+				display: none;
+			}
+		}
+	} 
+}
+

@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/products",
+	"version": "0.1.0",
+	"title": "[FH] Products Carousel",
+	"category": "widgets",
+	"icon": "products",
+	"description": "Interactive module with products. The carousel is interactive in couple ways: main action button is leading to an option of browsing all products. It is possible to scroll sides to see different products and to click on a chosen one to read more about it. ",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "products",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+        "attributes": {
+            "title": {
+                "type": "string"
+            },
+            "contentLink": {
+                "type": "string"
+            },
+            "contentLinkText": {
+                "type": "string"
+            }
+        }
+}

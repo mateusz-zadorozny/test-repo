@@ -1,0 +1,86 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/counters-section",
+	"version": "0.1.0",
+	"title": "[FH] Parallax Background Section",
+	"category": "widgets",
+	"icon": "cover-image",
+	"description": "Section with Parallax Background in three different variants - text counters, charts and image columns. You may use additional mask on top of the background image.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"source": "html",
+			"type": "string",
+			"selector": "h2"
+		},
+		"content": {
+			"source": "html",
+			"type": "string",
+			"selector": "p"
+		},
+		"backgroundImage": {
+			"type": "string"
+		},
+		"viewType": {
+			"type": "string",
+			"default": "columns"
+		},
+		"isMaskChecked": {
+			"type": "boolean",
+			"default": true
+		},
+		"items": {
+			"source": "query",
+			"type": "array",
+			"selector": ".counters-section__items-list",
+			"default": [],
+			"query": {
+				"dataId": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "data-id",
+					"selector": "div"
+				},
+				"itemImage": {
+					"type": "string",
+					"source": "attribute",
+					"selector": ".counters-section__items-image-url",
+					"attribute": "src"
+				},
+				"itemValue": {
+					"source": "html",
+					"type": "string",
+					"selector": ".counters-section__item-value"
+				},
+				"itemButtonText": {
+					"type": "string",
+					"source": "html",
+					"selector": ".counters-section__item-button"
+				},
+				"itemButtonURL": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "href",
+					"selector": ".counters-section__item-button"
+				},
+				"imageLabel": {
+					"source": "html",
+					"type": "string",
+					"selector": ".counters-section__item-image-label"
+				},
+				"itemLabel": {
+					"source": "html",
+					"type": "string",
+					"selector": ".counters-section__item-label"
+				}
+			}
+		}
+	},
+	"textdomain": "counters-section",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

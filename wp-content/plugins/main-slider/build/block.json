@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/main-slider",
+  "version": "0.1.0",
+  "title": "[FH] Site Intro/Main slider",
+  "category": "layout",
+  "icon": "slides",
+  "description": "Interactive or non-interactive module, possibly with button. Requires good quality photo as a background. There is no need to prepare the photos in order to make menu bar visible - menu bar contains a black gradient making the tabs always visible.",
+  "supports": {
+    "html": false,
+    "align": [
+      "center",
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "contentType": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "source": "query",
+      "default": [],
+      "selector": ".main-slider__item",
+      "query": {
+        "dataId": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "data-id",
+          "selector": "img"
+        },
+        "url": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "src",
+          "selector": "img"
+        },
+        "alt": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "alt",
+          "default": "",
+          "selector": "img"
+        },
+        "title": {
+          "type": "string",
+          "source": "html",
+          "selector": ".intro-content-title"
+        },
+        "content": {
+          "type": "string",
+          "source": "html",
+          "selector": "p"
+        },
+        "contentLink": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "href",
+          "selector": "a.main-slider__content-link"
+        },
+        "contentLinkText": {
+          "type": "string",
+          "source": "html",
+          "selector": ".main-slider__content-link"
+        },
+        "searchButtonText": {
+          "type": "string",
+          "source": "html",
+          "selector": ".blog-search-button"
+        },
+        "searchInputPlaceholder": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "placeholder",
+          "selector": ".blog-search-input-placeholder"
+        }
+      }
+    }
+  },
+  "textdomain": "main-slider",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

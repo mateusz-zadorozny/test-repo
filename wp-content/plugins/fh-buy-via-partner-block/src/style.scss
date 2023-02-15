@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.partners-module {
+	.partners-list{
+		.partner-block{
+			padding-bottom: 24px;
+			padding-top: 24px;
+			border-bottom: 1px solid #ececec;
+			@media screen and (min-width: 768px){
+				display: flex;
+			}
+			&:first-child{
+				padding-top: 0;
+			}
+			&:last-child{
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+			&__brand{
+				flex: 0 1 200px;
+				margin-right: 24px;
+				margin-bottom: 24px;
+				@media screen and (min-width: 768px){
+					margin-bottom: 0;
+				}
+				img{
+					display: block;
+					margin-bottom: 8px;
+				}
+				.h2{
+					margin-bottom: 0;
+				}
+			}
+			&__description{
+				margin-right: 32px;
+				flex: 1;
+				margin-bottom: 24px;
+				@media screen and (min-width: 768px){
+					margin-bottom: 0;
+				}
+				p{
+					margin-bottom: 0;
+				}
+			}
+			&__button{
+				justify-self: flex-end;
+			}
+		}
+	}
+}

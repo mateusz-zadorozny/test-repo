@@ -1,0 +1,75 @@
+@import "vars";
+
+.pagination{
+    padding: 20px;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    li{
+      position: relative;
+      z-index: 0;
+      a, button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        color: $black;
+        border: 1px solid transparent;
+        text-decoration: none;
+        margin: 0 4px;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: $border-radius * 2;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: var(--accent);
+          text-decoration: none;
+          i{
+            color: var(--accent);
+          }
+        }
+        &:focus{
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      &.prev-button, &.next-button{
+        background-size: auto 45px;
+        background-image: url('../images/fh-shape-grey-border.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.3s ease-in-out;
+        button, a{
+          color: black;
+          font-size: 20px;
+          i{
+            display: block;
+          }
+        }
+        &:hover{
+          button, a{
+            color: var(--accent);
+          }
+        }
+      }
+      &.prev-button{
+        &, span{
+          transform: rotate(180deg);
+        }
+      }
+      &.active a, &.active button{
+        border-color: $dark-bg;
+        font-weight: bold;
+      }
+      &.disabled{
+        a{
+          background-color: grey;
+          color: white;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }

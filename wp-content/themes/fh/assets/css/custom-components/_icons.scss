@@ -1,0 +1,117 @@
+$fh-font-family: "fh-icons" !default;
+$fh-font-path: "../fonts/icons" !default;
+
+$icon-search: "\e90c";
+$icon-facebook: "\e908";
+$icon-instagram: "\e909";
+$icon-linkedin: "\e90a";
+$icon-youtube: "\e90b";
+$icon-checkmark: "\e904";
+$icon-upload: "\e905";
+$icon-arrow-right: "\e906";
+$icon-send: "\e907";
+$icon-chevron-bottom: "\e900";
+$icon-chevron-left: "\e901";
+$icon-chevron-right: "\e902";
+$icon-chevron-top: "\e903";
+
+
+
+@font-face {
+    font-family: '#{$fh-font-family}';
+    src:  url('#{$fh-font-path}/#{$fh-font-family}.eot?lgnikq');
+    src:  url('#{$fh-font-path}/#{$fh-font-family}.eot?lgnikq#iefix') format('embedded-opentype'),
+      url('#{$fh-font-path}/#{$fh-font-family}.ttf?lgnikq') format('truetype'),
+      url('#{$fh-font-path}/#{$fh-font-family}.woff?lgnikq') format('woff'),
+      url('#{$fh-font-path}/#{$fh-font-family}.svg?lgnikq##{$fh-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  
+  
+  [class^="icon-"], [class*=" icon-"], .icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$fh-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  // .icon-search {
+  //   &:before {
+  //     content: $icon-search; 
+  //   }
+  // }
+  .icon-facebook {
+    &:before {
+      content: $icon-facebook; 
+    }
+  }
+  .icon-instagram {
+    &:before {
+      content: $icon-instagram; 
+    }
+  }
+  .icon-linkedin {
+    &:before {
+      content: $icon-linkedin; 
+    }
+  }
+  .icon-youtube {
+    &:before {
+      content: $icon-youtube; 
+    }
+  }
+  .icon-checkmark {
+    &:before {
+      content: $icon-checkmark; 
+    }
+  }
+  .icon-upload {
+    &:before {
+      content: $icon-upload; 
+    }
+  }
+  .icon-arrow-right {
+    &:before {
+      content: $icon-arrow-right; 
+    }
+  }
+  .icon-send {
+    &:before {
+      content: $icon-send; 
+    }
+  }
+  .icon-chevron-bottom {
+    &:before {
+      content: $icon-chevron-bottom; 
+    }
+  }
+  .icon-chevron-left {
+    &:before {
+      content: $icon-chevron-left; 
+    }
+  }
+  .icon-chevron-right {
+    &:before {
+      content: $icon-chevron-right; 
+    }
+  }
+  .icon-chevron-top {
+    &:before {
+      content: $icon-chevron-top; 
+    }
+  }
+  
+  
+  
+  

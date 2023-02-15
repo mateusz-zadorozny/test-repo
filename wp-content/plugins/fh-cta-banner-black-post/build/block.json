@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/fh-cta-banner-black-post",
+  "version": "0.1.0",
+  "title": "[FH] CTA Banner Block - for blog posts",
+  "category": "widgets",
+  "icon": "share-alt2",
+  "description": "Interactive banner with a button leading to specific section or outside link. It is possible to insert fluentform shortcode instead of CTA button. Banner block for blog posts is smaller than banner block for other pages and it appears only for blog posts.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fh-cta-banner-black-post",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "contentLink": {
+      "type": "string"
+    },
+    "contentLinkText": {
+      "type": "string"
+    },
+    "colorVariant": {
+      "type": "string",
+      "default": "dark"
+    },
+    "backgroundImage": {
+      "type": "string"
+    },
+    "isFormShortCodeChecked": {
+      "type": "boolean",
+      "default": true
+    },
+    "formShortCode": {
+      "type": "string"
+    }
+  }
+}

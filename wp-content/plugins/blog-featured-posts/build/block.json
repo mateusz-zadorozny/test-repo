@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/blog-featured-posts",
+  "version": "0.1.0",
+  "title": "[FH] Blog - Featured Posts",
+  "category": "widgets",
+  "icon": "table-col-before",
+  "description": "Interactive module with 5 chosen segments showing a shortcut of specific article. Search for each article title to create a relation.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "blog-featured-posts",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "firstArticle": {
+      "type": "integer"
+    },
+    "firstArticleTitle": {
+      "type": "string"
+    },
+    "firstArticleLink": {
+      "type": "string"
+    },
+    "secondArticle": {
+      "type": "integer"
+    },
+    "secondArticleTitle": {
+      "type": "string"
+    },
+    "secondArticleLink": {
+      "type": "string"
+    },
+    "thirdArticle": {
+      "type": "integer"
+    },
+    "thirdArticleTitle": {
+      "type": "string"
+    },
+    "thirdArticleLink": {
+      "type": "string"
+    },
+    "fourthArticle": {
+      "type": "integer"
+    },
+    "fourthArticleTitle": {
+      "type": "string"
+    },
+    "fourthArticleLink": {
+      "type": "string"
+    },
+    "fifthArticle": {
+      "type": "integer"
+    },
+    "fifthArticleTitle": {
+      "type": "string"
+    },
+    "fifthArticleLink": {
+      "type": "string"
+    }
+  }
+}

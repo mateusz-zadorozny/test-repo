@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-selected-articles {
+	.post-card figure{
+		border: 1px solid black;
+		border-radius: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #ececec;
+		img{
+			width: auto;
+			height: auto;
+			margin: auto;;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/cta-banner-black",
+  "version": "0.1.0",
+  "title": "[FH] CTA Banner Block",
+  "category": "widgets",
+  "icon": "share-alt2",
+  "description": "Interactive banner with a button leading to specific section or outside link. It is possible to insert fluentform shortcode instead of CTA button",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cta-banner-black",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "contentLink": {
+      "type": "string"
+    },
+    "contentLinkText": {
+      "type": "string"
+    },
+    "colorVariant": {
+      "type": "string",
+      "default": "dark"
+    },
+    "backgroundImage": {
+      "type": "string"
+    },
+    "isFormShortCodeChecked": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "formShortCode": {
+      "type": "string"
+    }
+  }
+}

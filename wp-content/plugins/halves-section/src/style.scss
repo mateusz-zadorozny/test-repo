@@ -1,0 +1,186 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.halvesModule {
+	& + &{
+		padding-top: 0;	
+	}
+	&__content {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&-box {
+			width: 100%;
+			@media screen and (min-width: 992px) {
+				padding-right: 120px;
+			}
+			@media screen and (min-width: 768px) {
+				padding-right: 48px;
+			}
+		}
+	}
+	&.right{
+		.halvesModule__content-box {
+			@media screen and (min-width: 768px) {
+				padding-left: 48px;
+				padding-right: 0;
+			}
+			@media screen and (min-width: 992px) {
+				padding-left: 120px;
+				padding-right: 0;
+			}
+		}
+	}
+	&.infographic{
+		.halvesModule__content-box {
+			max-width: 800px;
+			padding-left: 0;
+			.halvesModule__header{
+				max-width: 490px;
+			}
+		}
+		& + & .container{
+			&:after,
+			&:before{
+				content: '';
+				position: absolute;
+				background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23D3D3D3FF' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+			}
+			&:before{
+				height: 64px;
+				width: 1px;
+				bottom: 100%;
+				margin-bottom: 30px;
+				left: 5%;
+			}
+			&:after{
+				height: 1px;
+				width: 90%;
+				top: -30px;
+				left: 5%;
+			}
+		}
+		.halvesModule__img-container{
+			display: flex;
+			align-items: center;
+			margin-top: 24px;
+    		margin-bottom: 24px;
+			.halvesModule__img{
+				width: auto;
+				margin: auto;
+				@media screen and (max-width: 992px){
+					object-fit: contain;
+				}
+				@media screen and (max-width: 567px){
+					max-height: 240px;
+				}
+			}
+		}
+		&.right:not(:last-child) .container{
+			&:before{
+				left: auto;
+				right: 24%;
+			}
+			&:after{
+				left: auto;
+				width: 58%;
+				right: 24%;
+			}
+		}
+		& + & + & + & .container{
+			&:before{
+				left: auto;
+				right: 5%;
+			}
+			&:after{
+				left: auto;
+				width: 58%;
+				right: 5%;
+			}
+		}
+
+	}
+	&.left{
+		@media screen and (min-width: 768px) {
+			.halvesModule__img-container{
+				order: 2;
+			}
+		}
+	}
+	&__row{
+		align-items: center;
+		@media screen and (min-width: 768px) and (max-width: 992px) {
+			align-items: stretch;
+		}
+	}
+	&__header {
+		width: 100%;
+		font-weight: 300;
+		@media screen and (max-width: 992px) {
+			margin: 1.125rem 0;
+		}
+	}
+	&__desc {
+		font-weight: 300;
+		line-height: 150%;
+		&, &.intro{
+			margin-bottom: 0;
+		}
+	}
+	&__img {
+		width: 100%;
+		@media screen and (min-width: 992px) {
+			margin: 1rem 0;
+		}
+		@media screen and (min-width: 768px) and (max-width: 992px) {
+			height: 90%;
+			object-fit: cover;
+			object-position: center;
+			margin-top: 7%;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: #293137;
+		font-weight: 700;
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+		svg, img {
+			display: block;
+			padding-left: 5px;
+			width: 15px;
+		}
+	}
+}
+.halvesModuleRight {
+	.halvesModule__content {
+		@media screen and (min-width: 992px) {
+			justify-content: flex-start;
+		}
+	}
+	.halvesModule__img {
+		width: 100%;
+		@media screen and (min-width: 992px) {
+			padding: 0 0 0 1rem;
+		}
+	}
+	.row {
+		@media screen and (min-width: 992px) {
+			flex-direction: row-reverse;
+		}
+	}
+}
+
+
+
+
+

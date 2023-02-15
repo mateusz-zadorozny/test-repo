@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/featured-products",
+  "version": "0.1.0",
+  "title": "[FH] Products - Featured products",
+  "category": "widgets",
+  "icon": "products",
+  "description": "Two interactive segments. Clicking on a product leads to subpage with more information. Segments displays a photo of a product with transparent background.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "featured-products",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "firstProduct": {
+      "type": "integer"
+    },
+    "firstProductBackgroundImage": {
+      "type": "string"
+    },
+    "firstProductTitle": {
+      "type": "string"
+    },
+    "firstProductLink": {
+      "type": "string"
+    },
+    "secondProduct": {
+      "type": "integer"
+    },
+    "secondProductBackgroundImage": {
+      "type": "string"
+    },
+    "secondProductTitle": {
+      "type": "string"
+    },
+    "secondProductLink": {
+      "type": "string"
+    }
+  }
+}

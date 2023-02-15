@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-contact-collapse {
+    .contact-collapse__item-main-content{
+        width: 60%;
+    }
+    .contact-collapse__item-main{
+        @media screen and (max-width: 576px){
+            flex-wrap: wrap;
+            .contact-collapse__item-main-content{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .col-xl-3 .contact-collapse__item-main{
+        @media screen and (min-width: 1200px){
+            flex-wrap: wrap;
+            .contact-collapse__item-main-content{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

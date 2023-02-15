@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/opinions-module",
+  "version": "0.1.0",
+  "title": "[FH] Opinions Module",
+  "category": "widgets",
+  "icon": "star-filled",
+  "description": "Non-interactive module with opinions from clients. Opinion card require: profile photo, client name, number of stars for rating and short opinion itself.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "lgrey-bg"
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "opinionsBlock": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "opinions-module",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

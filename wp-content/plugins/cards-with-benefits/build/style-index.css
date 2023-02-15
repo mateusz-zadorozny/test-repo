@@ -1,0 +1,202 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@media screen and (min-width: 768px) {
+  .wp-block-create-block-cards-with-benefits .post-card > p {
+    margin-bottom: 0;
+  }
+}
+.wp-block-create-block-cards-with-benefits a {
+  color: black;
+  text-decoration: none;
+}
+.wp-block-create-block-cards-with-benefits .benefits-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wp-block-create-block-cards-with-benefits .card-column__figure {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .wp-block-create-block-cards-with-benefits .card-column__figure {
+    height: 190px;
+  }
+}
+.wp-block-create-block-cards-with-benefits .card-column__figure img {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .wp-block-create-block-cards-with-benefits .card-column__figure img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .wp-block-create-block-cards-with-benefits .fc-content {
+    margin-bottom: 0;
+  }
+  .wp-block-create-block-cards-with-benefits .fc-content + .read-more {
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .wp-block-create-block-cards-with-benefits .mainContent {
+    margin-bottom: 0;
+  }
+}
+.wp-block-create-block-cards-with-benefits .read-more {
+  font-weight: 600;
+  color: #293137;
+}
+.wp-block-create-block-cards-with-benefits .read-more i {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+}
+.wp-block-create-block-cards-with-benefits .benefit-column:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  .wp-block-create-block-cards-with-benefits .benefit-column {
+    width: 50%;
+    flex: 0 1 50%;
+  }
+  .wp-block-create-block-cards-with-benefits .benefit-column:first-child {
+    padding-right: 1rem;
+  }
+  .wp-block-create-block-cards-with-benefits .benefit-column:last-child {
+    padding-left: 1rem;
+  }
+}
+.wp-block-create-block-cards-with-benefits .benefit-column img {
+  width: 32px;
+  border-radius: 0;
+}
+.wp-block-create-block-cards-with-benefits .benefit-column p {
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 575px) {
+  .wp-block-create-block-cards-with-benefits .benefit-column {
+    position: relative;
+    padding-left: 56px;
+    padding-right: 16px;
+  }
+  .wp-block-create-block-cards-with-benefits .benefit-column img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+.wp-block-create-block-cards-with-benefits .benefit-column a {
+  color: black;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.wp-block-create-block-cards-with-benefits .benefit-column a:hover {
+  color: black;
+  opacity: 0.6;
+}
+.wp-block-create-block-cards-with-benefits .one-col .cards-grid > div:first-child {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .wp-block-create-block-cards-with-benefits .one-col .benefit-column {
+    margin-bottom: 0;
+    padding-right: 1rem;
+    width: calc(50% - 32px);
+    flex: 0 1 calc(50% - 32px);
+  }
+}
+.wp-block-create-block-cards-with-benefits .two-col .card-column__figure {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 32px 32px;
+    display: grid;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div.benefits-row:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div:nth-of-type(1) {
+    order: 1;
+  }
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div:nth-of-type(2) {
+    order: 3;
+  }
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div:nth-of-type(3) {
+    order: 2;
+  }
+  .wp-block-create-block-cards-with-benefits .two-col .cards-grid > div:nth-of-type(4) {
+    order: 4;
+  }
+}
+.wp-block-create-block-cards-with-benefits .three-col .card-column__figure {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 32px 6px;
+    display: grid;
+  }
+}
+.wp-block-create-block-cards-with-benefits .three-col .benefit-column {
+  width: 100%;
+  flex: 0 1 100%;
+}
+@media screen and (max-width: 767px) {
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(1) {
+    order: 1;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(2) {
+    order: 3;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(3) {
+    order: 5;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(4) {
+    order: 2;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(5) {
+    order: 4;
+  }
+  .wp-block-create-block-cards-with-benefits .three-col .cards-grid > div:nth-of-type(6) {
+    order: 6;
+  }
+}
+.wp-block-create-block-cards-with-benefits .one-col .benefit-column, .wp-block-create-block-cards-with-benefits .three-col .benefit-column {
+  position: relative;
+  padding-left: 56px;
+}
+.wp-block-create-block-cards-with-benefits .one-col .benefit-column img, .wp-block-create-block-cards-with-benefits .three-col .benefit-column img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

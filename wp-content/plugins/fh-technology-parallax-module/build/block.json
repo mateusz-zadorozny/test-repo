@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/fh-technology-parallax-module",
+  "version": "0.1.0",
+  "title": "[FH] Technology Parallax Module",
+  "category": "widgets",
+  "icon": "layout",
+  "description": "Big non-interactive module with illustrations/photos of different devices.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fh-technology-parallax-module",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "sectionOneTitle": {
+      "type": "string"
+    },
+    "sectionOneContent": {
+      "type": "string"
+    },
+    "sectionTwoTitle": {
+      "type": "string"
+    },
+    "sectionTwoContent": {
+      "type": "string"
+    },
+    "sectionThreeTitle": {
+      "type": "string"
+    },
+    "sectionThreeContent": {
+      "type": "string"
+    },
+    "sectionColumnsOneTitle": {
+      "type": "string"
+    },
+    "sectionColumnsOneContent": {
+      "type": "string"
+    },
+    "sectionColumnsTwoTitle": {
+      "type": "string"
+    },
+    "sectionColumnsTwoContent": {
+      "type": "string"
+    },
+    "sectionColumnsThreeTitle": {
+      "type": "string"
+    },
+    "sectionColumnsThreeContent": {
+      "type": "string"
+    },
+    "sectionFourTitle": {
+      "type": "string"
+    },
+    "sectionFourContent": {
+      "type": "string"
+    },
+    "sectionFiveTitle": {
+      "type": "string"
+    },
+    "sectionFiveContent": {
+      "type": "string"
+    }
+  }
+}

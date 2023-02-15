@@ -1,0 +1,78 @@
+.post-intro .breadcrumbs a {
+  color: #18303F;
+  transition: all 0.3s ease-in-out;
+}
+.post-intro .breadcrumbs a:hover {
+  color: var(--accent);
+}
+.post-intro .post-intro-image {
+  max-width: 1520px;
+  margin: auto;
+  height: 420px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-badge {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.post-card {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.post-card figure {
+  height: 260px;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.blog-featured-posts .post-card figure {
+  height: 220px;
+}
+.post-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-card:hover {
+  color: var(--accent);
+}
+.post-card:hover figure {
+  filter: grayscale(0);
+}
+
+.sidebar-content:hover .post-card {
+  opacity: 0.6;
+}
+.sidebar-content:hover figure {
+  filter: grayscale(1);
+}
+.sidebar-content .post-card:hover {
+  opacity: 1;
+}
+.sidebar-content .post-card:hover figure {
+  filter: grayscale(0);
+}
+
+.post-tags {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.post-tags li {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #ECECEC;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}

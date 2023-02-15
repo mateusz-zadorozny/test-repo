@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-main-slider {
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+	.slider-controls{
+		width: 100%;
+		padding: 24px;
+		background-color: white;
+		box-shadow: 0 -4px 16px rgb(0 0 0 / 10%);
+        &.absolute{
+            position: absolute;
+            z-index: 2;
+        }
+	}
+    .page-intro .intro-slider{
+        overflow: auto;
+        flex-direction: column;
+        max-height: 100vh;
+    }
+    .button.primary{
+        padding: 16px 32px!important;
+    }
+}
+

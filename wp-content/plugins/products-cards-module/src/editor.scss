@@ -1,0 +1,30 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-products-cards-module {
+    .link-container{
+        padding: 12px 10px;
+        border: 1px solid #dadada;
+        margin-top: 12px;
+        border-radius: 6px;
+        width: 100%;
+    }
+    .components-button.image-button.product-card-img{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.productCards{
+    &__card{
+        height: calc(100% - 51px);
+        &.add-new{
+            height: auto;
+            min-height: 0;
+        }
+    }
+    
+}

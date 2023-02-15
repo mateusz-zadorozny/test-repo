@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.blog-featured-posts {
+	.block-editor-link-control__search-input-container .block-editor-url-input__input{
+		border: 1px solid #dadada;
+		width: 100%;
+		border-radius: 4px;
+		padding: 12px 16px;
+	}
+	.block-editor-link-control__search-input-container, .block-editor-link-control__search-input-wrapper{
+		z-index: 2;
+	}
+	.post-card.featured-post{
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-color: #ECECEC;
+	}
+	.post-image-wrapper .post-image{
+		object-fit: contain;
+    	background-color: #ECECEC;
+	}
+}

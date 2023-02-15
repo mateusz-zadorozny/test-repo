@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/app-section",
+  "version": "0.1.0",
+  "title": "[FH] App Section",
+  "category": "widgets",
+  "icon": "smartphone",
+  "description": "Interactive module with information about FutureHome mobile apps. Two buttons letting user choose from App Store (for iPhones) and Google Store (other devices) - with optional text for mobile only.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "app-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "backgroundImage": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "default": "title"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "androidLink": {
+      "type": "string"
+    },
+    "androidLinkText": {
+      "type": "string"
+    },
+    "mobileAndroidLinkText": {
+      "type": "string"
+    },
+    "iosLink": {
+      "type": "string"
+    },
+    "iosLinkText": {
+      "type": "string"
+    },
+    "mobileIosLinkText": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

@@ -1,0 +1,151 @@
+footer{
+    background-color: $dark-bg;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 32px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    @include media-breakpoint-up(sm){
+        padding-bottom: 64px;
+    }
+    font-weight: 100;
+    .brand-logo{
+        a img{
+            display: inline-block;
+            max-width: 212px;
+        }
+    }
+    .footer-nav{
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-between;
+            li.menu-item-has-children{
+                padding-right: 48px;
+                min-width: 200px;
+                display: block;
+                margin-top: 24px;
+                width: 100%;
+                @include media-breakpoint-only(sm){
+                    width: 50%;
+                }
+                @include media-breakpoint-only(md){
+                    width: 33%;
+                }
+                @include media-breakpoint-up(lg){
+                    width: auto;
+                }
+                & > a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    line-height: 130%;
+                    pointer-events: none;
+                    cursor: text;
+                }
+                & > ul{
+                    margin-top: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    & > li{
+                        margin-bottom: 8px;
+                        a{
+                            color: white;
+                            font-weight: 300;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            transition: all 0.3s ease-in-out;
+                            &:hover{
+                                opacity: 0.6;
+                                text-decoration: underline;
+                            }
+                        }
+                        &.social-link{
+                            &:before{
+                                content: '';
+                                width: 24px;
+                                height: 24px;
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                margin-right: 12px;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            &.facebook:before{
+                                background-image: url('../images/facebook-white.svg');
+                            }
+                            &.youtube:before{
+                                background-image: url('../images/youtube-white.svg');
+                            }
+                            &.linkedin:before{
+                                background-image: url('../images/linkedin-white.svg');
+                            }
+                            &.instagram:before{
+                                background-image: url('../images/instagram-white.svg');
+                            }
+                        }
+                    }
+                }
+                &.split-cols{
+                    @include media-breakpoint-only(sm){
+                        padding-right: 0;
+                    }
+                    @include media-breakpoint-only(md){
+                        width: 66%;
+                    }
+                    & > ul{
+                        columns: 2;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        background-color: $border;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-up(lg){
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            background-color: #555964;
+        }
+    }
+    .bottom-bar{
+        font-size: 1rem;
+        a{
+            color: white;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        .footer-link{
+            margin-left: 24px;
+            padding-left: 24px;
+            position: relative;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:before{
+                position: absolute;
+                left: 0;
+                content: '|';
+            }
+            &:first-child{
+                margin-left: 0;
+                padding-left: 0;
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

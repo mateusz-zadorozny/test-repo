@@ -1,0 +1,218 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/cards-with-benefits",
+	"version": "0.1.0",
+	"title": "[FH] Columns Grid",
+	"category": "widgets",
+	"icon": "grid-view",
+	"description": "Interactive or non-interactive module. Possibility of 3 types of grid composition (1, 2 or 3 columns enlarged in the upper part of module). Each column may be turned into interactive element leading to a sub-page.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "cards-with-benefits",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "source": "html",
+            "selector": "h2"
+        },
+        "mainContent": {
+            "type": "string",
+            "source": "html",
+            "selector": ".mainContent"
+        },
+        "fontSize": {
+            "type": "number",
+            "default": 16
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "white-bg"
+        },
+        "optionColumns": {
+            "type": "string"
+        },
+        "fcMediaID": {
+            "type": "number",
+            "selector": ".fc-media-ID"
+        },
+        "fcMediaURL": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fc-media-url",
+            "attribute": "src"
+        },
+        "fcContentTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fc-content-title"
+        },
+        "fcContent": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fc-content"
+        },
+        "fcLinkUrl": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fc-content"
+        },
+        "fcLink": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "href",
+            "selector": "a.fc-content-link"
+        },
+        "fsLink": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "href",
+            "selector": "a.fs-content-link"
+        },
+        "ftLink": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "href",
+            "selector": "a.ft-content-link"
+        },
+        "fcfBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fcf-benefit-icon",
+            "attribute": "src"
+        },
+        "fcfBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fcf-benefit-title"
+        },
+        "fcfBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fcf-benefit"
+        },
+        
+        "fcsBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fcs-benefit-icon",
+            "attribute": "src"
+        },
+        "fcsBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fcs-benefit-title"
+        },
+        "fcsBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fcs-benefit"
+        },
+        "fsMediaID": {
+            "type": "number"
+        },
+        "fsMediaURL": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fs-media-url",
+            "attribute": "src"
+        },
+        "fsContentTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fs-content-title"
+        },
+        "fsContent": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fs-content"
+        },
+        "fsfBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fsf-benefit-icon",
+            "attribute": "src"
+        },
+        "fsfBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fsf-benefit-title"
+        },
+        "fsfBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fsf-benefit"
+        },
+        "fssBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fss-benefit-icon",
+            "attribute": "src"
+        },
+        "fssBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fss-benefit-title"
+        },
+        "fssBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fss-benefit"
+        },
+        "ftMediaID": {
+            "type": "number"
+        },
+        "ftMediaURL": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".ft-media-url",
+            "attribute": "src"
+        },
+        "ftContentTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".ft-content-title"
+        },
+        "ftContent": {
+            "type": "string",
+            "source": "html",
+            "selector": ".ft-content"
+        },
+        "ftfBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".ftf-benefit-icon",
+            "attribute": "src"
+        },
+        "ftfBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".ftf-benefit-title"
+        },
+        "ftfBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".ftf-benefit"
+        },
+        "ftsBenefitIcon": {
+            "type": "string",
+            "source": "attribute",
+            "selector": ".fts-benefit-icon",
+            "attribute": "src"
+        },
+        "ftsBenefitTitle": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fts-benefit-title"
+        },
+        "ftsBenefit": {
+            "type": "string",
+            "source": "html",
+            "selector": ".fss-benefit"
+        }
+    }
+}

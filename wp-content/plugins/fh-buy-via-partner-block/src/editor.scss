@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .partners-module  {
+	.link-control, .components-base-control__field input{
+		width: 100%;
+		padding: 12px 10px;
+		border: 1px solid #dadada;
+		margin-top: 12px;
+		border-radius: 6px;
+	}
+	.partner-block{
+		flex-wrap: wrap;
+		&__brand{
+			margin-right: 32px;
+		}
+	}
+	.partner-buttons-group{
+		flex: 0 1 100%;
+		justify-content: flex-start;
+	}
+}

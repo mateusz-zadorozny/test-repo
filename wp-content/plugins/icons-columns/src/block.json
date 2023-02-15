@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/icons-columns",
+	"version": "0.1.0",
+	"title": "[FH] Icons Columns",
+	"category": "widgets",
+	"icon": "superhero",
+	"description": "Non-Interactive module with three-column icons grid with title and text.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "icons-columns",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+        "attributes": {
+            "title": {
+                "type": "string"
+            },
+            "iconsColumns": {
+                "type": "array",
+                "default": []
+            },
+            "backgroundColor": {
+                "type": "string",
+                "default": "lgrey-bg"
+            }
+        }
+}

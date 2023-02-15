@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/logos-exhibition",
+  "version": "0.1.0",
+  "title": "[FH] Logos Exhibition",
+  "category": "widgets",
+  "icon": "ellipsis",
+  "description": "Non-interactive segment presenting partners logotypes. Requires logotypes in greyscale with transparent background.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "logos-exhibition",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "white-bg"
+    },
+    "icons": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

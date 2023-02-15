@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/fh-infographic-module",
+  "version": "0.1.0",
+  "title": "[FH] Infographic Module",
+  "category": "widgets",
+  "icon": "analytics",
+  "description": "Non-interactive module with text, graphic and background image.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fh-infographic-module",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "mainImage": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "string"
+    }
+  }
+}

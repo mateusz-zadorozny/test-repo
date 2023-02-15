@@ -1,0 +1,76 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.blog-featured-posts {
+	
+	.post-card.featured-post{
+		position: relative;
+		border-radius: 6px;
+		overflow: hidden;
+		height: 100%;
+		min-height: 320px;
+		display: flex;
+		align-items: flex-end;
+		background-size: cover;
+    	background-position: center;
+		@media screen and (max-width: 767px){
+			min-height: 420px;
+		}
+		&:hover{
+			margin-top: -8px;
+			margin-bottom: 8px;
+			box-shadow: 0 12px 24px rgba(black, 0.1);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 50%;
+			background: linear-gradient(to top, rgba(black, 0.7), rgba(black, 0));
+			z-index: 1;
+		}
+		.post-content{
+			padding: 42px;
+			position: relative;
+			width: 100%;
+			max-width: 620px;
+			z-index: 2;
+			@media screen and (max-width: 1199px){
+				padding: 32px;
+			}
+			@media screen and (max-width: 767px){
+				padding: 24px;
+			}
+			h2, h3, p{
+				color: white;
+				z-index: 2;
+				position: relative;
+			}
+			&:after{
+				content: '';
+				background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI3LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMTIyIDc5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTEyMiA3OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7b3BhY2l0eTowLjY7fQoJLnN0MXtmaWxsLW9wYWNpdHk6MC44ODt9Cjwvc3R5bGU+CjxnIGNsYXNzPSJzdDAiPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTk0Ny41LDczMC4ybDAuMi0wLjJsMi4xLTIuM2wxLjEtMS4zYzguNC05LjQsMTU4LjEtMjU5LjMsMTYyLjQtMjcyLjRjMTEuOC0zNS44LDExLjgtNzMuMSwwLTEwOC45CgkJYy00LjMtMTMuMS0xMC0yNS41LTE3LTM3LjFMOTcyLjQsMTAxLjhjLTYtOS45LTEzLjMtMTkuNy0yMS43LTI5LjFsLTEuMS0xLjNDOTA5LjcsMjYuMyw4NDguOSwwLDc4NC42LDBIMjE2LjEKCQlDOTYuNywwLDAsODYuNiwwLDE5My40djQwNC4xQzAsNzA4LjgsMTAwLjksNzk5LDIyNS4zLDc5OWg1NzBDODU1LjMsNzk5LDkxMS44LDc3My40LDk0Ny41LDczMC4yTDk0Ny41LDczMC4yeiIvPgo8L2c+Cjwvc3ZnPgo=");
+				background-size: 100% auto;
+				background-position: top right;
+				position: absolute;
+				width: 624px;
+				height: 542px;
+				top: -24px;
+				right: -64px;
+				z-index: -1;
+				@media screen and (min-width: 768px) {
+					width: 1120px;
+					height: calc(100% + 128px);
+					top: 0;
+					right: -140px;
+				}
+			}
+		}
+	}
+	.post-card__hover:not(:last-child) .post-card{
+		margin-bottom: 3rem;
+	}
+}

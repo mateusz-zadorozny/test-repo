@@ -1,0 +1,217 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.contact-collapse {
+	margin: 2rem 0 0;
+	@media screen and (min-width: 992px) {
+		margin: 0;
+	}
+
+	&__item {
+		position: relative;
+		background: #FFFFFF;
+		border: 1px solid #C4C4C4;
+		border-radius: 12px;
+		padding: 2rem;
+		margin: 0 0 1rem 0;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		@media screen and (max-width: 767px) {
+			padding: 1.5rem;
+		}
+
+		&:hover{
+			border-color: black;
+		}
+
+		&-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				margin-bottom: 0!important;
+			}
+		}
+
+
+		&-content {
+			max-height: 0;
+			visibility: hidden;
+			opacity: 0;
+			transition: all .5s ease-in-out;
+			hr {
+				margin-bottom: 0;
+				margin-top: 0;
+				transition: margin .5s ease-in-out;
+			}
+			.collapse__item-content {
+				display: flex;
+				flex-wrap: wrap;
+				
+				&--box {
+					margin-bottom: 2rem;
+					padding-right: 10px;
+					width: 50%;
+					min-width: fit-content;
+					@media screen and (max-width: 992px) {
+						margin-bottom: 1.5rem;
+					}
+					&:last-of-type{
+						margin-bottom: 0;
+					}
+				}
+				&--title, &--text {
+					font-size: 1.375rem;
+					color: #222;
+					margin: 0!important;
+					@media screen and (max-width: 992px) {
+						font-size: 1.125rem;
+					}
+				}
+				&--title {
+					font-weight: 400;
+				}
+				&--text {
+					font-weight: 300;
+					a{
+						color: black;
+						text-decoration: none;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		&-icon {
+			font-size: 20px;
+			transition: all .3s ease-in-out;  
+		}
+	}
+}
+
+.socials-list{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	li{
+		margin-right: 36px;
+		margin-top: 16px;
+		position: relative;
+		.social-media-link__item-main{
+			display: flex;
+			align-items: center;
+			color: black;
+			text-decoration: none;
+			font-weight: 300;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				color: var(--accent);
+			}
+			figure{
+				width: 24px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 14px;
+				margin-bottom: 0;
+				img{
+					display: block;
+					width: 100%;
+					border-radius: 0;
+				}
+			}
+		}
+		.controls-panel.absolute{
+			position: absolute;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease-in-out;
+			background-color: white;
+			box-shadow: 0 4px 16px rgb(0 0 0 / 5%);
+		}
+		&:hover{
+			.controls-panel.absolute{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.open-collapse {
+	.contact-collapse__item-icon {
+		transform: rotate(180deg);
+	}
+	.contact-collapse__item-content {
+		max-height: 500px;
+		visibility: visible;
+		opacity: 1;
+		hr{
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+		}
+	}
+}
+
+.wp-block-create-block-contact-collapse{
+	.contact-collapse-main-title{
+		margin-top: 0;
+		margin-bottom: 0;
+		& + p{
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+	.sidebar{
+		padding: 2rem;
+		width: 100%;
+		@media screen and (min-width: 992px) {
+			padding: 3rem;
+		}
+
+		@media screen and (max-width: 576px) {
+			.ff_submit_btn_wrapper{
+				text-align: center;
+			}
+			&:not(.white-bg){
+				margin-left: -24px;
+				margin-right: -24px;
+				width: calc(100% + 48px);
+				padding: 2rem 1.5rem;
+			}
+		}
+		
+		.fluentform{
+			padding: 0;
+		}	
+		.sidebar-intro{
+			max-width: 520px;
+			margin-top: 0.5rem;
+			margin-bottom: 3rem;
+		}
+		&.white-bg{
+			padding: 0;
+			@media screen and (min-width: 1200px) {
+				padding-left: 3rem;
+				padding-top: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	@media screen and (min-width: 992px) {
+		.col-lg-5 .sidebar{
+			max-width: 490px;
+		}
+	}
+	.col-xl-8 .fluentform{
+		max-width: 100%;
+	}
+}

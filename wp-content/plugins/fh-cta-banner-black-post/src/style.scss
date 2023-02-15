@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.cta-banner-post {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	.cta-banner__content-col--item{
+		padding: 44px 52px;
+		@media screen and (min-width: 1200px) {
+			padding-right: 0;
+		}
+		@media screen and (max-width: 576px) {
+			padding: 64px 0;
+		}
+		
+	}
+	.cta-banner__content-col{
+		@media screen and (max-width: 576px){
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+	.cta-banner__content{
+		min-height: 264px;
+	}
+	.cta-banner__bg-container:after {
+		@media screen and (min-width: 1200px) and (max-width: 1399px) {
+			left: -60%;
+		}
+		
+	}
+	&.light{
+		.cta-banner{
+			background-color: #F6F6F6;
+			box-shadow: none;
+		}
+		.cta-banner__bg-container:after{
+			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI3LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1NiA1NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTYgNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRjZGNkY2O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ1LjMsNDkuOGwwLjEtMC4ybDAuMS0wLjFjMC41LTAuNiwxLTEuMywxLjMtMmw3LjYtMTQuMWMwLjQtMC44LDAuOC0xLjYsMS0yLjVjMC43LTIuNCwwLjctNSwwLTcuNAoJYy0wLjMtMC45LTAuNi0xLjctMS0yLjVMNDYuOCw2LjljLTAuNC0wLjctMC44LTEuNC0xLjMtMmwtMC4xLTAuMWwtMC4xLTAuMkM0Mi44LDEuNywzOS4xLDAsMzUuMiwwbC0yMiwwQzUuOSwwLDAsNS45LDAsMTMuMgoJbDAsMjguMWMwLDcuMyw1LjksMTMuMiwxMy4yLDEzLjJoMjJDMzkuMSw1NC41LDQyLjgsNTIuOCw0NS4zLDQ5LjhMNDUuMyw0OS44eiIvPgo8L3N2Zz4K");
+		}
+	}
+}

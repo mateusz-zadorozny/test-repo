@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/products-cards-module",
+	"version": "0.1.0",
+	"title": "[FH] Products - Supported Product Cards",
+	"category": "widgets",
+	"icon": "products",
+	"description": "Module for products from partners. Product card should display following information: photo in PNG format with transparent background, name of the product and the company logo.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "products-cards-module",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+        "attributes": {
+            "title": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "contentLink": {
+              "type": "string"
+            },
+            "contentLinkText": {
+              "type": "string"
+            },
+            "products": {
+              "type": "array",
+              "default": []
+            }
+        }
+}

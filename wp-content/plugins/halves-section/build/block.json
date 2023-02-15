@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/halves-section",
+  "version": "0.1.0",
+  "title": "[FH] Text + Photo Columns",
+  "category": "widgets",
+  "icon": "align-left",
+  "description": "Non-interactive modules with illustration and text.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "halves-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "backgroundImage": {
+      "type": "string"
+    },
+    "blockVariant": {
+      "type": "string",
+      "default": "classic-img"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "white-bg"
+    },
+    "textPosition": {
+      "type": "string",
+      "default": "left"
+    }
+  }
+}

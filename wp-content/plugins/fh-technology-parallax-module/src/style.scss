@@ -1,0 +1,198 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.technology-parallax-module {
+	background-color: #1F2529;
+	overflow: hidden;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	position: sticky;
+	width: 100%;
+	height: 100%;
+
+	&, h2, p{
+		color: white;
+	}
+	.layer-above{
+		position: relative;
+		z-index: 2;
+	}
+	&__img{
+		text-align: center;
+		position: relative;
+		transition: opacity 0.3s ease-in-out;
+		&--mask{
+			position: absolute;
+			z-index: 0;
+			height: auto;
+			width: 150%;
+			margin-bottom: -24px;
+			max-width: 200%;
+			@media screen and (min-width: 567px) {
+				margin-bottom: -64px;
+			}
+			&.left-bottom{
+				left: 0;
+				bottom: 0;
+				margin-left: -50px;
+				@media screen and (min-width: 567px) {
+					margin-left: -80px;				
+				}
+				@media screen and (min-width: 992px) {
+					margin-left: -120px;				
+				}
+			}
+			&.right-bottom{
+				right: 0;
+				bottom: 0;
+				margin-right: -80px;
+			}
+			&.wide{
+				width: 200%;
+				margin-bottom: -70px;
+				max-width: 200%;
+				margin-left: -150px;
+				@media screen and (min-width: 567px) {
+					margin-bottom: -50px;
+					max-width: 200%;
+					margin-left: -300px;
+				}
+				@media screen and (min-width: 567px) {
+					margin-bottom: -120px;
+				}
+			}
+			@media screen and (max-width: 992px) {
+				transform: translate(0)!important;
+			}
+		}
+		&--front{
+			position: relative;
+			z-index: 2;
+			@media screen and (max-width: 992px) {
+				transform: translate(0)!important;
+			}
+		}
+		&.add-lines{
+			@media screen and (min-width: 576px) {
+				&:before, &:after{
+					content: '';
+					width: 200px;
+					height: 1px;
+					background: linear-gradient(to right, rgba(85, 90, 91, 0), rgba(85, 90, 91,1), rgba(85, 90, 91, 0));
+					position: absolute;
+					z-index: 0;
+					opacity: 0;
+					transition: all 1s 0.5s ease-in-out;
+				}
+				&.bottom{
+					&:before{
+						right: 85%;
+						top: 80%;
+						transform: rotate(-33deg);
+					}
+					&:after{
+						left: 90%;
+						top: 60%;
+						transform: rotate(33deg);
+					}
+				}
+				&.left{
+					&:before{
+						right: 48%;
+						top: 10%;
+						transform: rotate(11deg);
+					}
+					&:after{
+						left: 44%;
+						top: 100%;
+						transform: rotate(-32deg);
+					}
+				}
+				&.last{
+					&:before{
+						display: none;
+					}
+					&:after{
+						left: 66%;
+						top: 100%;
+						transform: rotate(32deg);
+					}
+				}
+			}
+		}
+	}
+	&__container.section-visible{
+		.add-lines{
+			@media screen and (min-width: 576px) {
+				&:before, &:after{
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	&__content{
+		padding-bottom: 32px;
+		position: relative;
+		z-index: 2;
+		
+		@media screen and (min-width: 992px) {
+			padding-top: 64px;
+			padding-bottom: 64px;
+		}
+		@media screen and (min-width: 1200px) {
+			padding-top: 120px;
+			padding-bottom: 120px;
+		}
+	}
+	&__container{
+		margin-bottom: 80px;
+		@media screen and (min-width: 576px) {
+			margin-bottom: 120px;
+		}
+		@media screen and (min-width: 992px) {
+			margin-bottom: 0;
+		}
+		&.third{
+			padding-top: 32px;
+			@media screen and (min-width: 567px) {
+				padding-top: 64px;
+			}
+			@media screen and (min-width: 1200px) {
+				padding-top: 120px;
+			}
+		}
+	}
+	&__row{
+		&.image-columns{
+			margin-top: 96px;
+			margin-bottom: 96px;
+			justify-content: space-between;
+		}
+		&.introduction{
+			position: relative;
+			z-index: 2;
+		}
+	}
+	&__column{
+		max-width: 410px!important;
+		&:not(:last-child){
+			margin-bottom: 32px;
+		}
+		@media screen and (min-width: 992px) {
+			margin-bottom: 0;
+		}
+		&-img{
+			margin-bottom: 32px;
+			img{
+				display: block;
+			}
+		}
+		.technology-parallax-module__column--title{
+			margin-bottom: 12px;
+		}
+	}
+}

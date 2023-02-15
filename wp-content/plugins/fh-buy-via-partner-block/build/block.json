@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/fh-buy-via-partner-block",
+  "version": "0.1.0",
+  "title": "[FH] Buy via Partner",
+  "category": "widgets",
+  "icon": "store",
+  "description": "Interactive module with buttons leading to outside pages of partners. Partners may be added or edited in the \"Partners\" section. Search for a partner name to display it on the list.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fh-buy-via-partner-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "partnersList": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

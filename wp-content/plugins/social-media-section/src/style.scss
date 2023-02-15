@@ -1,0 +1,59 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-social-media-section {
+	background: #ECECEC;
+	overflow-x: hidden;
+}
+
+.social-media-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 2rem 0 0;
+	@media screen and (min-width: 992px) {
+		margin: 0;
+	}
+	&__item {
+		position: relative;
+		background: #FFFFFF;
+		border: 1px solid #C4C4C4;
+		border-radius: 12px;
+		padding: 2rem;
+		margin: 0 0 1.5rem 0;
+		text-decoration: none;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+
+		@media screen and (min-width: 576px) {
+			width: 48%;
+		}
+
+		&:hover{
+			border-color: black;
+		}
+
+		h3 {
+			color: #212529!important
+		}
+
+		img{
+			border-radius: 0;
+		}
+
+		&-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				margin-bottom: 0!important;
+			}
+		}
+	}
+}
